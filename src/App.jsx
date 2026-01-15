@@ -19,7 +19,7 @@ function App() {
           <Terminal />
         </button>
 
-        <span aria-hidden="hidden" id="log-tt">
+        <span aria-hidden="true" id="log-tt">
           <span hidden>Log</span>
         </span>
       </div>
