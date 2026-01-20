@@ -1,36 +1,16 @@
-import { Download, Play, Terminal } from '@carbon/icons-react';
-import { Button, Popover, PopoverContent } from '@carbon/react';
-
+import { Terminal } from '@carbon/icons-react';
 import './App.scss';
 
 function App() {
   return (
     <div className="container">
-      <Button hasIconOnly kind="ghost" iconDescription="Export" renderIcon={Download} />
-
-      <Popover>
-        <PopoverContent aria-hidden="true" role="tooltip" id="log-tt">
-          Log
-        </PopoverContent>
-      </Popover>
-
       <div>
         <button type="button" aria-labelledby="log-tt">
           <Terminal />
         </button>
 
-        <span aria-hidden="true" id="log-tt">
-          <span hidden>Log</span>
-        </span>
-      </div>
-
-      <div>
-        <button type="button" aria-labelledby="play-tt">
-          <Play />
-        </button>
-
-        <span aria-hidden="false" id="play-tt">
-          <span>Play</span>
+        <span role="tooltip" aria-hidden="true" className="popover" id="log-tt">
+          <span className="display-none">Log</span>
         </span>
       </div>
     </div>
